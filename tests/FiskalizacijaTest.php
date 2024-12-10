@@ -85,7 +85,7 @@ class FiskalizacijaTest extends TestCase
         $listOtherTaxRate[] = new PorezOstaloType("Naziv2", 27.1, 445.1, 50.1);
         $bill               = new RacunType();
 
-        $bill->setOib("32314900695");
+        $bill->setOib($_ENV['FISCAL_OIB']);
         $bill->setOznSlijed("P");
         $bill->setUSustPdv(true);
         $bill->setDatVrijeme("15.07.2014T20:00:00");

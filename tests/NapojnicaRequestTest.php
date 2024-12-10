@@ -101,7 +101,7 @@ class NapojnicaRequestTest extends TestCase
         $listOtherTaxRate[] = new PorezOstaloType("Naziv2", 27.1, 445.1, 50.1);
         $bill               = new RacunNapojnicaType();
 
-        $bill->setOib("32314900695");
+        $bill->setOib($_ENV['FISCAL_OIB']);
         $bill->setOznSlijed("P");
         $bill->setUSustPdv(true);
         $bill->setDatVrijeme(\Carbon\Carbon::yesterday()->format('d.m.Y\TH:i:s'));
@@ -153,7 +153,7 @@ class NapojnicaRequestTest extends TestCase
         $listOtherTaxRate[] = new PorezOstaloType("Naziv2", 27.1, 445.1, 50.1);
         $bill               = new RacunType();
 
-        $bill->setOib("32314900695");
+        $bill->setOib($_ENV['FISCAL_OIB']);
         $bill->setOznSlijed("P");
         $bill->setUSustPdv(true);
         $bill->setDatVrijeme(\Carbon\Carbon::yesterday()->format('d.m.Y\TH:i:s'));

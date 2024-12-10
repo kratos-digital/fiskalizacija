@@ -6,6 +6,9 @@ tests/democacert.cer.pem
 coverage
 build/logs
 .phpunit.result.cache
+.phpunit.cache/test-results
 .idea
 .env
 FISKAL_NEW.p12
+FISKAL_1.p12
+phpunit.xml.bak
